@@ -1,0 +1,16 @@
+/Blackjack
+│
+├── /include             # Header files (.h or .hpp)
+│   ├── Card.h
+│   ├── Deck.h
+│   ├── Participant.h    # Base class for Player and Dealer
+│   ├── GameController.h
+│   └── IDisplay.h       # The "Interface" for UI
+│
+├── /src                 # Implementation files (.cpp)
+│   ├── Card.cpp
+│   ├── Deck.cpp
+│   ├── GameController.cpp
+│   └── ConsoleDisplay.cpp
+│
+└── main.cpp             # Entry point
