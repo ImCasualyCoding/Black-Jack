@@ -51,5 +51,8 @@ void Deck :: shuffle(){
     //uses the std::shuffle algorithm to shuffle the 'cards' vector
     //takes the start of the vector, the end, and the generator
     std::shuffle(cards.begin(), cards.end() ,g);
-    
+
 }
+
+
+
