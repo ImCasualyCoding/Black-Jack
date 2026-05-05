@@ -26,3 +26,30 @@ Deck::Deck(){
         }
     }
 }
+
+Card Deck::draw(){
+
+    // grab the very last card from the 'cards' vector
+    Card topCard= cards.back();
+        
+    //remove the card from the vector
+    //reduces the size of the deck by 1
+    cards.pop_back();
+        
+    //returns the card so the player can use ir
+    return topCard;
+    
+}
+
+void Deck :: shuffle(){
+    //asks the system for a random seed 
+    std::random_device rd;
+
+    // 'g' is our "random number generator"
+    std:: mt19937 g(rd());
+
+    //uses the std::shuffle algorithm to shuffle the 'cards' vector
+    //takes the start of the vector, the end, and the generator
+    std::shuffle(cards.begin(), cards.end() ,g);
+    
+}
