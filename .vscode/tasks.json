@@ -5,11 +5,12 @@
             "label": "C/C++: g++.exe build active file",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
             "args": [
-                "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "-I${workspaceFolder}/include",
+                "${workspaceFolder}/src/*.cpp",
+                "${workspaceFolder}/main.cpp",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}/blackjack.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
